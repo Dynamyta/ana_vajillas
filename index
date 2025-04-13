@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ana y sus vajillas</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 font-sans">  
+    <!-- Header -->
+    <header class="bg-white shadow">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="https://images.pexels.com/photos/3764957/pexels-photo-3764957.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Logo Ana y sus vajillas" class="h-12 rounded-full border-2 border-yellow-300 mr-4">
+                <div class="text-2xl font-bold text-gray-800">Ana y sus vajillas</div>
+            </div>
+            <ul class="flex space-x-6">
+                <li><a href="#home" class="text-gray-600 hover:text-gray-800">Inicio</a></li>
+                <li><a href="#products" class="text-gray-600 hover:text-gray-800">Productos</a></li>
+                <li><a href="#about" class="text-gray-600 hover:text-gray-800">Sobre Nosotros</a></li>
+                <li><a href="#contact" class="text-gray-600 hover:text-gray-800">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="bg-cover bg-center h-96" style="background-image: url('https://images.pexels.com/photos/279609/pexels-photo-279609.jpeg?auto=compress&cs=tinysrgb&w=1350')">
+        <div class="container mx-auto px-6 h-full flex items-center">
+            <div class="bg-white bg-opacity-80 p-8 rounded-lg shadow-lg border border-yellow-300">
+                <h1 class="text-6xl font-extrabold mb-4 text-blue-800" style="font-family: 'Georgia', serif;">Bienvenidos a Ana y sus vajillas</h1>
+                <p class="text-xl mb-6 text-gray-700">Cuberterías elegantes, platos originales y tazas de café únicas para tu hogar.</p>
+                <a href="#products" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">Ver Productos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-12">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-8">Nuestros Productos</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Product Card: Cubertería -->
+                <div class="bg-white rounded-lg shadow hover:shadow-lg transition">
+                    <img src="https://images.pexels.com/photos/279614/pexels-photo-279614.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Cubertería" class="w-full h-48 object-cover rounded-t-lg">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold">Cubertería Elegante</h3>
+                        <p class="text-gray-600">Acero inoxidable con diseño moderno y ergonómico.</p>
+                        <p class="text-blue-600 font-bold mt-2">34,99 €</p>
+                        <button class="mt-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Añadir al carrito</button>
+                    </div>
+                </div>
+                <!-- Product Card: Platos Originales -->
+                <div class="bg-white rounded-lg shadow hover:shadow-lg transition">
+                    <img src="https://images.pexels.com/photos/3779045/pexels-photo-3779045.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Platos Originales" class="w-full h-48 object-cover rounded-t-lg">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold">Plato Original Floral</h3>
+                        <p class="text-gray-600">Diseño único pintado a mano para tu mesa.</p>
+                        <p class="text-blue-600 font-bold mt-2">12,99 €</p>
+                        <button class="mt-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Añadir al carrito</button>
+                    </div>
+                </div>
+                <!-- Product Card: Tazas de Café -->
+                <div class="bg-white rounded-lg shadow hover:shadow-lg transition">
+                    <img src="https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Tazas de Café" class="w-full h-48 object-cover rounded-t-lg">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold">Taza de Café Artesanal</h3>
+                        <p class="text-gray-600">Cerámica con detalles únicos para tus momentos especiales.</p>
+                        <p class="text-blue-600 font-bold mt-2">9,99 €</p>
+                        <button class="mt-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Añadir al carrito</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="bg-yellow-50 py-12">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-8 text-gray-800">Sobre Nosotros</h2>
+            <p class="text-lg text-gray-800 max-w-3xl mx-auto">En Ana y sus vajillas, nos apasiona traer a tu hogar piezas únicas y llenas de personalidad. Especializados en cuberterías, platos originales y tazas de café, cada producto está pensado para hacer de tu día a día algo especial.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-12">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-8">Contacto</h2>
+            <div class="max-w-lg mx-auto">
+                <form class="space-y-4">
+                    <input type="text" placeholder="Nombre" class="w-full p-3 border rounded focus:outline-none focus:ring-2 focus:ring-blue-600">
+                    <input type="email" placeholder="Email" class="w-full p-3 border rounded focus:outline-none focus:ring-2 focus:ring-blue-600">
+                    <textarea placeholder="Mensaje" class="w-full p-3 border rounded focus:outline-none focus:ring-2 focus:ring-blue-600" rows="5"></textarea>
+                    <button type="submit" class="w-full bg-blue-600 text-white p-3 rounded hover:bg-blue-700">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto px-6 text-center">
+            <p>© 2025 Ana y sus vajillas. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
